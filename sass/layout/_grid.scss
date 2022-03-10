@@ -1,0 +1,11 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(min-content,1fr));
+    grid-template-rows: 100vh minmax(auto,120vh) repeat(7,minmax(auto,max-content));
+    @media screen and (max-width: 60.5em) {
+        grid-template-rows: 100vh minmax(auto,max-content) repeat(7,minmax(auto,max-content));
+        overflow-x: auto;
+        width: 100vw;
+    }
+    row-gap: 4rem;
+}

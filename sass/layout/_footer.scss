@@ -1,0 +1,48 @@
+.footer {
+    grid-column: 1 / -1;
+    grid-row: 10 / -1;
+    background-color: $color-dark-1;
+    display: flex;
+    color: $color-gray;
+    padding: 3rem 0;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.7rem;
+            
+    @media screen and (max-width: 75em) {
+        flex-wrap: wrap;
+        font-size: 1.4rem;
+        justify-content: flex-start;
+    }
+    &__options {
+        display: flex;
+        list-style: none;
+        @media screen and (max-width: 75em) {
+            padding-left: 1rem;
+        }
+    }
+    &__item {
+        margin-right: 1.6rem;
+        padding: .5rem 1rem;
+        @media screen and (max-width: 75em) {
+            padding: .5rem;
+        }
+    }
+    &__right {
+        @media screen and (max-width: 75em) {
+            margin-top: 1rem;
+            padding-left: 2.2rem;
+        }
+    }
+    &__link {
+        &:visited,
+        &:active,
+        &:link {
+            text-decoration: none;
+            color: $color-gray;
+        }
+        &:hover {
+            text-decoration: underline .1rem $color-gray;
+        }
+    }
+}

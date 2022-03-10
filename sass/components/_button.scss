@@ -1,0 +1,44 @@
+.btn {
+    &:link,
+    &:visited {
+        text-decoration: none;
+        outline: none;
+        border: none;
+        transition: transform .3s;
+    }
+    background-color: $color-light-1;
+    border: none;
+    color: transparent;
+    padding: 1.2rem 2.5rem;
+    border-radius: 2.5rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    transform: scale(1);
+    transition: transform .3s;
+
+    &--green {
+        background-image: $gradient-green;
+        color: $color-dark-1;
+    }
+    &--light {
+        color: $color-dark-1;
+        background-color: transparent;
+        border: .2rem solid $color-light-3 !important;
+        &:hover {
+            border: .2rem solid $color-green-1 !important;
+        }
+    }
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+.btn--arrow {
+    text-decoration: none;
+    color: $color-dark-1;
+    font-size: 2.3rem;
+    transition: margin-left .5s;
+
+    &:hover span {
+        margin-left: 1rem;
+    }
+}

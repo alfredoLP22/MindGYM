@@ -1,0 +1,73 @@
+.clients {
+    grid-column: 2 / span 10;
+    grid-row: 6 / 7;
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(5, 1fr);
+
+    &__main--text {
+        grid-column: 3 / span 4;
+        font-size: 6rem;
+        text-align: center;
+        @media screen and (max-width: 60.5em) {
+            grid-column: 2 / span 6;
+            font-size: 3rem;
+        }
+    }
+    &__image--container {
+        grid-column: 1 / -1;
+        grid-row: 2 / -1;
+        background-image: url(../img/miss.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 1.5rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        @media screen and (max-width: 60.5em) {
+            background-size: 100% 100%;
+        }
+    }
+    &__text-container {
+        flex: 0 1 50vw;
+        margin-left: 2.5rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    
+        & q {
+            margin: 3rem 0;
+            font-size: 3.8rem;
+            color: $color-light-1;
+            @media screen and (max-width: 60.5em) {
+                font-size: 2rem;
+            }
+        }
+        & p {
+            font-size: 3rem;
+            color: $color-light-2;
+            @media screen and (max-width: 60.5em) {
+                font-size: 1.5rem;
+            }
+        }
+        & span {
+            font-size: 2.4rem;
+            color: $color-light-2;
+            @media screen and (max-width: 60.5em) {
+                font-size: 1.5rem;
+            }
+        }
+
+    }
+    &__img {
+        width: 11rem;
+        height: 11rem;
+        @media screen and (max-width: 75em) {
+            width: 7rem;
+            height: 7rem;
+        }
+    }
+}
